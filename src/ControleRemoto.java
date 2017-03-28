@@ -8,4 +8,10 @@ public class ControleRemoto {
 	public void irParaCanal(int canal){
 		this.televisao.modificarCanal(canal);
 	}
+	public void ligarTV(){
+		this.televisao.ligar();
+	}
+	public void desligarTV(){
+		this.televisao.desligar();
+	}
 }

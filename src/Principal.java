@@ -23,6 +23,15 @@ public class Principal {
 		System.out.println("O volume da TV é " + tv1.getVolume());
 		tv1.setModelo("Samsung");
 		System.out.println("Modelo alterado para " + tv1.getModelo());
+		
+		ControleRemoto controle = new ControleRemoto(tv1);
+		
+		controle.desligarTV();
+		System.out.println("Controle remoto - A TV está ligada? " + tv1.isLigada());
+		controle.ligarTV();
+		System.out.println("Controle remoto - A TV está ligada? " + tv1.isLigada());
+		controle.irParaCanal(40);
+		System.out.println("Controle remoto - A TV está no canal " + tv1.getCanal());
 	}
 
 }
